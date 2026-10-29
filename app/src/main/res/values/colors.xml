@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全局颜色表：所有界面都以这里的颜色为准，改颜色只需要改这个文件 -->
+<resources>
+    <!-- 主题色（按钮、选中状态用的蓝色） -->
+    <color name="primary">#4A7CF7</color>
+    <color name="primary_dark">#3866D8</color>
+
+    <!-- 背景色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="page_bg">#F7F8FA</color>     <!-- 页面底色：极浅的灰白 -->
+    <color name="card_stroke">#ECEFF4</color> <!-- 卡片描边 -->
+    <color name="divider">#E6E8EC</color>      <!-- 分割线 -->
+    <color name="item_current_bg">#EDF3FF</color> <!-- 单词列表中当前单词的高亮底色 -->
+
+    <!-- 文字颜色 -->
+    <color name="text_primary">#222222</color>   <!-- 主要文字（单词） -->
+    <color name="text_secondary">#555555</color> <!-- 次要文字（释义） -->
+    <color name="text_gray">#999999</color>      <!-- 辅助文字（音标、进度） -->
+
+    <!-- 应用图标背景色 -->
+    <color name="ic_launcher_background">#4A7CF7</color>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  生词本页布局
+    FrameLayout 叠放两层：
+      底层：标题 + 生词数量 + RecyclerView 列表
+      上层：tv_empty 空状态提示（列表为空时显示，居中）
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <!-- 标题栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vocab_title"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- 生词数量，例如 “共 3 个单词” -->
+            <TextView
+                android:id="@+id/tv_vocab_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vocab_count_default"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/vocab_subtitle"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+
+        <!-- 生词列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_vocab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+
+    <!-- 空状态提示：列表没有数据时显示 -->
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/vocab_empty"
+        android:textColor="@color/text_gray"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</FrameLayout>

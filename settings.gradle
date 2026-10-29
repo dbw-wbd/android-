@@ -1,0 +1,24 @@
+/*
+ * settings.gradle —— Gradle 的设置文件
+ * 作用：
+ *   1. 声明插件仓库 / 依赖仓库（Google 提供的 Android 库都放在 google() 仓库里）
+ *   2. 声明本项目包含哪些模块（这里只有 app 一个模块）
+ */
+pluginManagement {
+    repositories {
+        google()            // Android 官方插件（AGP）仓库
+        mavenCentral()      // Java 公共仓库
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "WordReciteApp"   // 项目名称（显示在 Android Studio 标题栏）
+include ':app'                        // 包含 app 模块

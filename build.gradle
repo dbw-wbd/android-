@@ -1,0 +1,9 @@
+/*
+ * 顶层 build.gradle —— 整个工程的构建脚本
+ * 这里只负责“声明 Android Gradle Plugin 的版本”，不写具体编译逻辑。
+ * 真正的编译配置在 app/build.gradle 中。
+ */
+plugins {
+    // apply false 表示：只在这里声明插件版本，不在根工程应用它（由 app 模块去应用）
+    id 'com.android.application' version '8.5.2' apply false
+}

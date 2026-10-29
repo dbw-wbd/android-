@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  应用主题：整个 App 统一使用的样式
+  parent="Theme.MaterialComponents.Light.NoActionBar" 的含义：
+    - 使用 Material 组件库的浅色主题（MaterialButton、MaterialCardView 需要它）
+    - NoActionBar 表示不要系统自带的标题栏（我们自己画标题）
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.WordReciteApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 主题色 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary_dark</item>
+
+        <!-- 状态栏：白色背景 + 深色图标（浅色主题下更协调） -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- 窗口底色 -->
+        <item name="android:windowBackground">@color/page_bg</item>
+    </style>
+
+</resources>

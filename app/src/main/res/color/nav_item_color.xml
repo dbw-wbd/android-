@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  底部 Tab 的颜色状态表（ColorStateList）：
+    state_checked = true  → 选中时用主题蓝
+    state_checked = false → 未选中时用灰色
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/primary" android:state_checked="true" />
+    <item android:color="@color/text_gray" />
+</selector>

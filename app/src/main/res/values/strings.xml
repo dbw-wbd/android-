@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 所有界面文字集中在这里，方便修改和统一管理（避免把中文写死在布局里） -->
+<resources>
+    <string name="app_name">背单词</string>
+
+    <!-- 底部 Tab -->
+    <string name="tab_recite">背诵</string>
+    <string name="tab_vocab">生词本</string>
+
+    <!-- 背诵页：基础控件 -->
+    <string name="recite_title">背单词</string>
+    <string name="recite_subtitle">本地词库 · 支持多词书</string>
+    <string name="progress_default">0 / 0</string>
+    <string name="word_placeholder">Word</string>
+    <string name="phonetic_placeholder">/ˈfəʊnɪtɪk/</string>
+    <string name="meaning_placeholder">中文释义</string>
+    <string name="btn_add_vocab">加入生词本</string>
+    <string name="btn_prev">上一个</string>
+    <string name="btn_next">下一个</string>
+
+    <!-- 背诵页：词书相关 -->
+    <string name="wordbook_label">词书</string>
+    <string name="wordbook_import_btn">导入 CSV</string>
+    <string name="wordbook_loading">正在加载词书…</string>
+    <string name="wordbook_empty_db">当前词书还没有单词，请选一个其它词书或导入 CSV</string>
+    <string name="wordbook_toast_loaded">已加载词书：%s（共 %d 词）</string>
+    <string name="wordbook_toast_imported">已导入词书：%s（共 %d 词）</string>
+
+    <!-- 单词列表弹窗 -->
+    <string name="word_list_btn">单词列表</string>
+    <string name="word_list_title">单词列表</string>
+    <string name="word_list_subtitle">点击任意单词，可直接跳到该词</string>
+    <string name="word_list_search_hint">搜索单词或释义</string>
+    <string name="word_list_empty">没有找到匹配的单词</string>
+
+    <!-- 首次启动对话框 -->
+    <string name="first_launch_title">欢迎使用</string>
+    <string name="first_launch_message">请选择要加载的初始词书，以后随时可以切换或导入。</string>
+    <string name="first_launch_btn_default">用默认 15 词</string>
+    <string name="first_launch_btn_cet4">加载内置 CET-4 200 词</string>
+    <string name="first_launch_btn_import">从手机选择 CSV 文件</string>
+
+    <!-- 生词本页 -->
+    <string name="vocab_title">生词本</string>
+    <string name="vocab_subtitle">跨词书的全部生词都会显示在这里</string>
+    <string name="vocab_count_default">共 0 个单词</string>
+    <string name="vocab_empty">生词本还是空的\n去背诵页点【加入生词本】吧</string>
+    <string name="btn_remove">移出生词本</string>
+</resources>

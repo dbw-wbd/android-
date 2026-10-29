@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部两个 Tab：背诵页 + 生词本页 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_recite"
+        android:icon="@drawable/ic_tab_recite"
+        android:title="@string/tab_recite" />
+
+    <item
+        android:id="@+id/nav_vocab"
+        android:icon="@drawable/ic_tab_vocab"
+        android:title="@string/tab_vocab" />
+
+</menu>
